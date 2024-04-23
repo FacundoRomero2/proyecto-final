@@ -34,16 +34,17 @@ main .textos h1{
   margin-top: 10px;
 }
 
-main .textos h1 span{
+main .textos h1{
   display: block;
 }
 
-main .textos .boton{
-  background-color: #2B2B2B;
-  color: #E6E6DD;
+main .textos{
+  background-color: #e4bd11;
+  color: black;
   display: inline-block;
-  margin: 10px;
+  margin: 90px;
   padding: 10px;
+  box-shadow: 20px 30px 30px black;
 }
 
 .main-dos{
@@ -72,6 +73,37 @@ section{
   box-shadow: 20px 30px 30px black;
 }
 
+.divCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(22vh, 1fr)); 
+  gap: 10px; 
+  width: 70vw;
+  background-color: #E4BD11;
+  color: black;
+  margin-inline: 110px 100px;
+  margin: 60px;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 10px rgba(5, 5, 5, 0.516);
+}
+
+.section h1{
+  grid-column: span 5; 
+}
+
+img{
+  height: 20vh;
+  width: 22vh;
+  margin: 10px;
+}
 section div{
   text-align: center;
 }
@@ -102,4 +134,47 @@ section div img{
 footer{
   margin-top: 20px;
   text-align: center;
+}
+
+/* mq desktop */
+
+@media screen and (min-width: 1024px) {
+  main .img-dos, main .img-cinco{
+      display: block;
+  }
+
+  main{
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 40% 40% 15%;
+  }
+
+  main .img-dos, main .img-cuatro{
+      grid-column: span 1;
+  }
+
+  main .img-uno, main .img-tres{
+      grid-row: span 2;
+  }
+
+  main .img-cinco{
+      grid-column: span 3;
+  }
+
+}
+
+/* mq celu */
+
+@media screen and (min-width: 600px) {
+  main{
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 50%) ;
+  }
+
+  main .img-cuatro{
+      grid-column: span 2;
+  }
+
+  footer{
+      margin-top: 70px;
+  }
 }
