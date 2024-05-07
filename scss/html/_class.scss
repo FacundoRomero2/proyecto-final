@@ -1,0 +1,52 @@
+@import "../utilidades/variables";
+
+/* main class */
+
+.main-dos{
+    margin: 100px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+/* section class */
+
+.section {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(22vh, 1fr)); 
+  gap: 10px; 
+  width: 70vw;
+  background-color: $color-menu;
+  color: $relleno;
+  margin: 60px auto; 
+  padding: 50px;
+  box-shadow: 10px 10px 10px rgba(5, 5, 5, 0.516);
+
+  h1 {
+      grid-column: span 5; 
+  }
+}
+
+.info {
+  background-color: $color-menu;
+  color: $relleno;
+  margin: 100px 100px;
+  padding: 2rem; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem; 
+  box-shadow: 20px 30px 30px $relleno;
+
+  // mq celu
+  @media screen and (max-width: 768px) {
+      margin: 50px; 
+      flex-direction: column; 
+      padding: 1rem; 
+      gap: 1rem; 
+  }
+}
+
+  

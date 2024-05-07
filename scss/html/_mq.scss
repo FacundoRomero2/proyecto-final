@@ -1,0 +1,51 @@
+/* mq desktop */
+
+@media screen and (min-width: 1024px) {
+    main .img-dos, main .img-cinco{
+        display: block;
+    }
+  
+    main{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 40% 40% 15%;
+    }
+  
+    main .img-dos, main .img-cuatro{
+        grid-column: span 1;
+    }
+  
+    main .img-uno, main .img-tres{
+        grid-row: span 2;
+    }
+  
+    main .img-cinco{
+        grid-column: span 3;
+    }
+  
+  }
+  
+  /* mq tablet */
+
+  @media screen and (min-width: 768px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 50%);
+    }
+
+    main .img-cuatro {
+        grid-column: span 2;
+    }
+}
+  
+  /* mq celu */
+  
+  @media screen and (min-width: 600px) {
+    main{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 50%) ;
+    }
+  
+    main .img-cuatro{
+        grid-column: span 2;
+    }
+  }
