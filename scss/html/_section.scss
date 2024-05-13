@@ -2,32 +2,36 @@
 @import "../utilidades/variables";
 
 /* estilos de section */
+section {
+  background-color: $color-menu;
+  color: $relleno;
+  margin: 110px 100px;
+  padding: 5px;
+  @include flex;
+  display: grid;
+  flex-wrap: wrap;
+  gap: 5px;
+  box-shadow: 20px 30px 30px $shadow;
 
-section{
-    background-color: $color-menu;
-    color: $relleno;
-    margin: 110px 100px;
-    padding: 5px;
-    @include flex;
-    display: grid;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 100px;
-    box-shadow: 20px 30px 30px $relleno;
-        div{
-            text-align: center;
-            h2{
-                margin: 10px;
-            }
-            img{
-                width: 30%;
-            }
-        }
+  div {
+    text-align: center;
+
+    h2 {
+      margin: 10px;
+    }
+
+    img {
+      width: 30%;
+    }
   }
-
-/* img */
-
-img{
-   @include medidas(20vh, 22vh, 10px)
 }
 
+/* img */
+img {
+  @include medidas(20vh, 22vh, 10px);
+}
+
+img:hover {
+  transition: 0.5s;
+  transform: scale(1.6);
+}

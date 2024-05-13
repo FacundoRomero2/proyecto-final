@@ -1,15 +1,25 @@
 // con parametros
-
-@mixin medidas ($height, $width, $margin){
+@mixin medidas ($height, $width, $margin) {
     height: $height;
     width: $width;
     margin: $margin;
 }
 
 // sin parametros 
-
-@mixin flex{
+@mixin flex {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
+@mixin grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin reset-styles {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

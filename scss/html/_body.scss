@@ -1,8 +1,13 @@
 @import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+/* reset */
+* {
+  @include reset-styles;
+}
 
 /* estilos generales */
-
-body{
-    background-color: $color-body;
-    color: $color-body-dos;
-  }
+body {
+  background-color: $color-body;
+  color: $relleno;
+}

@@ -1,52 +1,50 @@
 @import "../utilidades/variables";
+@import "../utilidades/mixin";
 
 /* main class */
-
-.main-dos{
-    margin: 100px 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.main-dos {
+  margin: 100px 50px;
+  @include flex;
+}
 
 /* section class */
-
 .section {
+  @include grid;
   text-align: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(22vh, 1fr)); 
-  gap: 10px; 
+  grid-template-columns: repeat(auto-fill, minmax(22vh, 15rem));
   width: 70vw;
   background-color: $color-menu;
   color: $relleno;
-  margin: 60px auto; 
-  padding: 50px;
+  margin: 60px auto;
+  padding: 40px;
   box-shadow: 10px 10px 10px rgba(5, 5, 5, 0.516);
 
+  /* mq tablet */
+  @media screen and (max-width: 800px) {
+    grid-template-columns: none;
+  }
+
   h1 {
-      grid-column: span 5; 
+    grid-column: span 5;
   }
 }
 
+/* info class */
 .info {
   background-color: $color-menu;
   color: $relleno;
   margin: 100px 100px;
-  padding: 2rem; 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 2rem;
+  @include flex;
   flex-wrap: wrap;
-  gap: 2rem; 
-  box-shadow: 20px 30px 30px $relleno;
+  gap: 2rem;
+  box-shadow: 20px 30px 30px $shadow;
 
-  // mq celu
-  @media screen and (max-width: 768px) {
-      margin: 50px; 
-      flex-direction: column; 
-      padding: 1rem; 
-      gap: 1rem; 
+  /* mq celu */
+  @media screen and (max-width: 1090px) {
+    margin: 50px;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
   }
 }
-
-  

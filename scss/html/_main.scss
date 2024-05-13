@@ -1,27 +1,27 @@
-/* estilos de main */
-
 @import "../utilidades/variables";
-
 @import "../utilidades/mixin";
 
-main{
-    margin: 10px 50px;
-    @include flex;
-    justify-content: center;
-        .textos{
-            text-align: center;
-            background-color: $color-menu;
-            color: $relleno;
-            display: inline-block;
-            margin: 90px;
-            padding: 10px;
-            box-shadow: 20px 30px 30px $relleno;
-            h1{
-                margin-top: 10px;
-                display: block;
-            }
-        }
-        .principal{
-            text-align: center;
-        }
+/* estilos de main */
+main {
+  margin: 10px 50px;
+  @include flex;
+
+  .textos {
+    text-align: center;
+    background-color: $color-menu;
+    color: $relleno;
+    display: inline-block;
+    margin: 90px 10px 10px 10px;
+    padding: 10px;
+    box-shadow: 20px 30px 30px $shadow;
+
+    h1 {
+      margin-top: 10px;
+      display: block;
+    }
   }
+
+  .principal {
+    text-align: center;
+  }
+}
