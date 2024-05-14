@@ -1,11 +1,11 @@
-// con parametros
+// mixin con parametros
 @mixin medidas ($height, $width, $margin) {
     height: $height;
     width: $width;
     margin: $margin;
 }
 
-// sin parametros 
+// mixin sin parametros 
 @mixin flex {
     display: flex;
     justify-content: center;
