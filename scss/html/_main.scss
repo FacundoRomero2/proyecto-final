@@ -7,21 +7,55 @@ main {
   @include flex;
 
   .textos {
-    text-align: center;
-    background-color: $color-menu;
-    color: $relleno;
+    @include font-dos;
+    color: $relleno-dos;
     display: inline-block;
     margin: 90px 10px 10px 10px;
     padding: 10px;
-    box-shadow: 20px 30px 30px $shadow;
 
     h1 {
       margin-top: 10px;
       display: block;
+      text-decoration: underline;
     }
   }
+}
 
-  .principal {
-    text-align: center;
+/* img fotografo */
+
+.fotografo {
+  @include flex;
+  object-fit: cover;
+  @include medidas(25%, 25%, 10px 710px);
+}
+
+.fotografo:hover {
+  transition: none;
+  transform: scale(1);
+}
+
+/* mq imagen fotografo */
+
+/* mq celular */
+@media screen and (max-width: 599px) {
+  .fotografo {
+    @include medidas(80%, 80%, 10px auto); 
+    margin: 0 auto; 
   }
 }
+
+/* mq tablet */
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .fotografo {
+    @include medidas(60%, 60%, 10px auto); 
+    margin: 0 auto; 
+  }
+}
+
+/* mq desktop */
+@media screen and (min-width: 1024px) {
+  .fotografo {
+    @include medidas(25%, 25%, 10px auto); 
+  }
+}
+

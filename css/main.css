@@ -7,12 +7,25 @@
 
 /* estilos generales */
 body {
-  background-color: #142957;
-  color: rgb(255, 255, 255);
+  background-color: #000000;
+  color: rgb(8, 8, 8);
 }
 
 header .bg-tomato {
-  background-color: #2ea8e0;
+  background-color: #FFFFFF;
+}
+header nav div a .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  height: 90px;
+  width: auto;
+  margin: 0;
+}
+header nav div a .logo:hover {
+  transition: none;
+  transform: scale(1);
 }
 
 /* estilos de main */
@@ -23,27 +36,73 @@ main {
   align-items: center;
 }
 main .textos {
+  font-family: "Shadows Into Light", cursive;
+  font-style: normal;
+  font-weight: 400;
   text-align: center;
-  background-color: #2ea8e0;
-  color: rgb(255, 255, 255);
+  color: #5CE1E6;
   display: inline-block;
   margin: 90px 10px 10px 10px;
   padding: 10px;
-  box-shadow: 20px 30px 30px black;
 }
 main .textos h1 {
   margin-top: 10px;
   display: block;
-}
-main .principal {
-  text-align: center;
+  text-decoration: underline;
 }
 
+/* img fotografo */
+.fotografo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  height: 25%;
+  width: 25%;
+  margin: 10px 710px;
+}
+
+.fotografo:hover {
+  transition: none;
+  transform: scale(1);
+}
+
+/* mq imagen fotografo */
+/* mq celular */
+@media screen and (max-width: 599px) {
+  .fotografo {
+    height: 80%;
+    width: 80%;
+    margin: 10px auto;
+    margin: 0 auto;
+  }
+}
+/* mq tablet */
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .fotografo {
+    height: 60%;
+    width: 60%;
+    margin: 10px auto;
+    margin: 0 auto;
+  }
+}
+/* mq desktop */
+@media screen and (min-width: 1024px) {
+  .fotografo {
+    height: 25%;
+    width: 25%;
+    margin: 10px auto;
+  }
+}
 /* estilos de section */
 section {
-  background-color: #2ea8e0;
-  color: rgb(255, 255, 255);
-  margin: 110px 100px;
+  font-family: "Merienda", cursive;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  background-color: #FFFFFF;
+  color: rgb(8, 8, 8);
+  margin: 90px 100px;
   padding: 5px;
   display: flex;
   justify-content: center;
@@ -51,23 +110,25 @@ section {
   display: grid;
   flex-wrap: wrap;
   gap: 5px;
-  box-shadow: 20px 30px 30px black;
+  box-shadow: 20px 30px 30px rgb(146, 143, 143);
 }
 section div {
   text-align: center;
 }
 section div h2 {
+  text-decoration: underline;
   margin: 10px;
 }
 section div img {
   width: 30%;
 }
 
-/* img */
+/* imgs */
 img {
-  height: 20vh;
+  object-fit: cover;
+  height: 15vh;
   width: 22vh;
-  margin: 10px;
+  margin: 10px 20px;
 }
 
 img:hover {
@@ -82,20 +143,33 @@ img:hover {
   justify-content: center;
   align-items: center;
 }
+.main-dos .principal {
+  font-family: "Shadows Into Light", cursive;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #5CE1E6;
+}
+.main-dos .principal h1 {
+  text-decoration: underline;
+}
 
 /* section class */
 .section {
+  font-family: "Shadows Into Light", cursive;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
   display: grid;
   justify-content: center;
   align-items: center;
-  text-align: center;
   grid-template-columns: repeat(auto-fill, minmax(22vh, 15rem));
   width: 70vw;
-  background-color: #2ea8e0;
-  color: rgb(255, 255, 255);
+  background-color: #FFFFFF;
+  color: rgb(8, 8, 8);
   margin: 60px auto;
   padding: 40px;
-  box-shadow: 10px 10px 10px rgba(5, 5, 5, 0.516);
+  box-shadow: 10px 10px 10px rgb(146, 143, 143);
   /* mq tablet */
 }
 @media screen and (max-width: 800px) {
@@ -109,8 +183,12 @@ img:hover {
 
 /* info class */
 .info {
-  background-color: #2ea8e0;
-  color: rgb(255, 255, 255);
+  font-family: "Merienda", cursive;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  background-color: #FFFFFF;
+  color: rgb(8, 8, 8);
   margin: 100px 100px;
   padding: 2rem;
   display: flex;
@@ -118,8 +196,32 @@ img:hover {
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
-  box-shadow: 20px 30px 30px black;
+  box-shadow: 20px 30px 30px rgb(146, 143, 143);
   /* mq celu */
+}
+.info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.info p {
+  line-height: 1.5;
+}
+.info ul {
+  list-style-type: none;
+  padding: 0;
+}
+.info ul li {
+  margin-bottom: 0.5rem;
+}
+.info ul ul {
+  margin-top: 0.5rem;
+}
+.info a {
+  color: rgb(8, 8, 8);
+  text-decoration: none;
+}
+.info a:hover {
+  text-decoration: underline;
 }
 @media screen and (max-width: 1090px) {
   .info {
@@ -174,6 +276,11 @@ img:hover {
 }
 /* estilos de footer */
 footer {
+  color: #FFFFFF;
+  font-family: "Merienda", cursive;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
   text-align: center;
 }
 

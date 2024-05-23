@@ -23,3 +23,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+//fonts
+@mixin font-uno {
+    font-family: "Merienda", cursive;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+
+@mixin font-dos {
+    font-family: "Shadows Into Light", cursive;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+

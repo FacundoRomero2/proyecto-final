@@ -1,4 +1,8 @@
+@import "../utilidades/variables";
+
 /* estilos de footer */
 footer {
+  color: $color-menu;
+  @include font-uno;
   text-align: center;
 }

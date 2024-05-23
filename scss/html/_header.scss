@@ -4,4 +4,21 @@ header {
     .bg-tomato {
         background-color: $color-menu;
     }
+    nav{
+        div{
+            a{
+                .logo {
+                    @include flex;
+                    object-fit: cover;
+                    @include medidas(90px, auto, 0); 
+                  }
+                  
+
+                .logo:hover{
+                    transition: none;
+                    transform: scale(1);
+                }
+            }
+        }
+    }
 }

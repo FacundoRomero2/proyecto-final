@@ -3,9 +3,10 @@
 
 /* estilos de section */
 section {
+  @include font-uno;
   background-color: $color-menu;
   color: $relleno;
-  margin: 110px 100px;
+  margin: 90px 100px;
   padding: 5px;
   @include flex;
   display: grid;
@@ -17,6 +18,7 @@ section {
     text-align: center;
 
     h2 {
+      text-decoration: underline;
       margin: 10px;
     }
 
@@ -26,12 +28,14 @@ section {
   }
 }
 
-/* img */
+/* imgs */
 img {
-  @include medidas(20vh, 22vh, 10px);
+  object-fit: cover;
+  @include medidas(15vh, 22vh, 10px 20px);
 }
 
 img:hover {
   transition: 0.5s;
   transform: scale(1.6);
 }
+
